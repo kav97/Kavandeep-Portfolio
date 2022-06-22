@@ -1,1 +1,13 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  background-color: #2C2A2A;
+  color: #FFFFFF;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 1.813rem;
+}
+h3 span {
+  color: #D9BEA5;
+}/*# sourceMappingURL=styles.css.map */
