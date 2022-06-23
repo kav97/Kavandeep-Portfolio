@@ -1,15 +1,21 @@
+@use "./variables" as *;
 
+nav {
 
-body {
-    background-color: #2C2A2A;
-    color: #FFFFFF;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: lighter;
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+
+        span{
+            color: $accent-color;
+        }
+    }
 }
 
-h3 {
-    font-size: 1.813rem;
-    span{
-        color: #D9BEA5;
-    }
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
 }
