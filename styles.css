@@ -1,15 +1,86 @@
-nav h1 {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
+* {
+  padding: 0;
+  margin: 0;
 }
-nav h1 span {
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav__name {
+  font-size: 1.25rem;
+  display: block;
+  text-align: center;
+}
+.navbar .nav__name span {
   color: #D9BEA5;
 }
 
+.nav__links a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a.icon {
+  display: none;
+}
+
 body {
+  margin: 1.5rem;
   background-color: #2C2A2A;
   color: white;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: lighter;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+}
+body h2 {
+  font-size: 3.5rem;
+  margin: 20px 0px 20px 0px;
+}
+body hr {
+  width: 80px;
+  border: solid #D9BEA5 2px;
+  border-radius: 5%;
+}
+body p {
+  margin: 20px 0px 20px 0px;
+  font-family: serif;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-container .project__card {
+  background-color: dodgerblue;
+  height: 200px;
+  width: 200px;
+}
+.project-container .project__card .project__image {
+  background-color: #3B3636;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.external-links {
+  background-color: #453F3F;
+  color: #D9BEA5;
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 380px) {
+  .nav__links a.icon {
+    float: right;
+    display: block;
+  }
+
+  .nav__links a {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
