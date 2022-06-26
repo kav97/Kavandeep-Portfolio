@@ -1,119 +1,178 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kavandeep-Johal</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavandeep-Johal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    </head>
+  <body>
+    <!--Navigation bar through the webpage-->
+    <header>
+      <nav class="navbar">
+        <div class="nav__name">
+          <h1>Kav <span>Johal.</span></h1>
+        </div>
+        <div class="nav__links">
+          <a href="">About</a>
+          <a href="">Porfolio</a>
+          <a href="">Contact</a>
+          <a class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!--Main content of page-->
+    <main>
+      <!--Title and brief description -->
+      <div>
+        <h2>Junior Software Developer.</h2>
+        <hr/>
+        <p id="description">
+          Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat
+          massa pellentesque arcu at quis. Diam, elementum morbi pellentesque
+          blandit suscipit sit. Neque, et consequat phasellus augue neque mollis
+          tempor.
+        </p>
+      </div>
+      <!-- Portfolio - Section -->
+      <h3>PORTFOLIO</h3>
+      <section class="project-container">
+        <div class="project__card">
+          <div class="project__image"></div>
+          <h4>PROJECT 1</h4>
+          <button>React</button>
+          <button>SCSS</button>
+          <button></button>
+          <button></button>
+        </div>
+        <div class="project__card">
+          <div class="project__image"></div>
+          <h4>PROJECT 2</h4>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+        <div class="project__card">
+          <div class="project__image"></div>
+          <h4>Project 3</h4>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+      </section>
+      <!-- About me - Section -->
 
-
-    <body>
-    <!--Navigation bar through the webpage-->        
-        <header>
-            <nav class="navbar">
-                <div class="nav__name">
-                    <h1 >Kav <span>Johal.</span></h1>
-                </div>
-                <div class="nav__links">
-                    <a href="">About</a>
-                    <a href="">Porfolio</a>
-                    <a href="">Contact</a>
-                    <a class="icon">
-                      <div class="fa fa-bars"></div>
-                    </a>
-                </div> 
-            </nav>
-        </header>
-        <!--Main content of page-->
-        <main>
-            <!--Title and brief description -->
-            <div>        
-                <h2>
-                    Junior Software Developer.
-                </h2>
-                <hr>
-                <p>
-                    Nunc aliquam faucibus ac in donec commodo id. 
-                    Dui viverra sit feugiat massa pellentesque arcu at quis. 
-                    Diam, elementum morbi pellentesque blandit suscipit sit. 
-                    Neque, et consequat phasellus augue neque mollis tempor.
-                </p>
-            </div>  
-            <!-- Portfolio - Section -->
-            <h3>
-                PORTFOLIO
-            </h3>
-            <section class="project-container">
-                <div class="project__card">
-                    <div class="project__image"></div>
-                    <h4>PROJECT 1</h4>
-                    <button>React</button>
-                    <button>SCSS</button>
-                    <button></button>
-                    <button></button>
-                </div>
-                <div class="project__card">
-                    <div class="project__image"></div>
-                    <h4>PROJECT 2</h4>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </div>
-                <div class="project__card">
-                    <div class="project__image"></div>
-                    <h4>Project 3</h4>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </div>
-            </section>
-            <!-- About me - Section -->
-
-            <section class="about__container">
-                <h3>ABOUT.</h3>
-                <img src="" alt="">
-                <p> 
-                    Interdum sollicitudin fringilla quisque vivamus. Eget
-                    viverra metus, ultrices aliquet. Velit, tincidunt sed
-                    sed proin pellentesque dictum pulvinar. Arcu diam
-                    massa elementum tempor lectus. Aliquam lacus lacus
-                    diam eget quisque purus etiam mi, curabitur. 
-                    Imperdiet sed felis ipsum, porttitor ipsum faucibus
-                    neque cursus. Quis blandit quisque sed diam at
-                    tellus sagittis.
-                    <br>
-                    Urna, vel nibh lectus condimentum. Purus pellentesque 
-                    scelerisque tristique in vestibulum augue accumsan. 
-                    Eu morbi porttitor dolor ipsum dui ultrices viverra nisi,
-                    leo. Erat porta risus, id enim adipiscing sit amet at. 
-                    Tortor, posuere pulvinar volutpat magnis felis suspendisse
-                    ut. Tincidunt in pulvinar suspendisse lectus enim, tortor
-                    mattis ut. Integer auctor aliquet tincidunt rhoncus at.
-                </p>
-
-            </section>
-
-
-
-            <!-- Get in touch - Section -->
-        </main>
-        <!-- Footer - Section -->
-        <footer class="external-links">
-            <div class="link__logos">
-                <a href="#"><img src="" alt="linked-in"></a>
-                <a href="#"><img src="" alt="git-hub"></a>
-                <a href="#"></a>
+      <section class="about__section">
+        <div class="about__container">
+          <div class="about__title">
+            <h3>ABOUT.</h3>
+          </div>
+          <div class="about__image">
+            <img id ="self-portrait" src=".\images\self-portrait.jpg" alt="kav" />
+          </div>
+          <div class="about__text">
+            <p>
+              Interdum sollicitudin fringilla quisque vivamus. Eget viverra
+              metus, ultrices aliquet. Velit, tincidunt sed sed proin
+              pellentesque dictum pulvinar. Arcu diam massa elementum tempor
+              lectus. Aliquam lacus lacus diam eget quisque purus etiam mi,
+              curabitur. Imperdiet sed felis ipsum, porttitor ipsum faucibus
+              neque cursus. Quis blandit quisque sed diam at tellus sagittis.
+              <br />
+              Urna, vel nibh lectus condimentum. Purus pellentesque scelerisque
+              tristique in vestibulum augue accumsan. Eu morbi porttitor dolor
+              ipsum dui ultrices viverra nisi, leo. Erat porta risus, id enim
+              adipiscing sit amet at. Tortor, posuere pulvinar volutpat magnis
+              felis suspendisse ut. Tincidunt in pulvinar suspendisse lectus
+              enim, tortor mattis ut. Integer auctor aliquet tincidunt rhoncus
+              at.
+            </p>
+          </div>
+          <div class="about__exp">
+            <div class="exp__title">
+                <h3>Experiences</h3>
             </div>
-        </footer>
-    </body>
+            <div class="exp__row">
+                <p>
+                    Trainee Software Developer @ Nology
+                    <span class="expand-button">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="exp__row">
+                <p>
+                    Trainee Software Developer @ Nology
+                    <span class="expand-button">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="exp__row">
+                <p>
+                    Trainee Software Developer @ Nology
+                    <span class="expand-button">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                </p>
+            </div>
+            </div>
+          <div class="about__interests">
+            <div class="interests__title">
+                <h3>Interests</h3>
+            </div>
+            <div class="interests__row">
+                <p>
+                    Trainee Software Developer @ Nology
+                    <span class="expand-button">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="interests__row">
+                <p>
+                    Trainee Software Developer @ Nology
+                    <span class="expand-button">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="interests__row">
+                <p>
+                    Trainee Software Developer @ Nology
+                    <span class="expand-button">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Get in touch - Section -->
+    </main>
+    <!-- Footer - Section -->
+    <footer class="external-links">
+      <!-- <div class="link__logos">
+        <a href="#"><img src="" alt="linked-in" /></a>
+        <a href="#"><img src="" alt="git-hub" /></a>
+        <a href="#"></a>
+      </div> -->
+    </footer>
+  </body>
 </html>
