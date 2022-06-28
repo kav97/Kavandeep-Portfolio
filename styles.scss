@@ -24,6 +24,36 @@ header {
     }
 }
 
+.nav__links a {
+    display: none;
+}
+a.icon {       
+    float: right;
+    display: block;      
+}
+
+@media screen and (min-width: 426px) {  
+    
+    .navbar {
+
+        .nav__links {
+
+            a.icon {
+                display: none; 
+            }
+            
+            & a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 1rem;
+            }  
+        }
+    }
+}
 
 body {
     background-color: $background-color;
@@ -64,7 +94,7 @@ body {
 
 #description {
     margin: 20px 0px 20px 0px;
-    width: 306px;
+    width: 377px;
 }
 
 .project__card {  
@@ -86,34 +116,6 @@ body {
     }
 }
 
-@media screen and (min-width: 426px) {  
-  
-    .navbar .nav__links a.icon {
-        display: none;
-    }  
-
-    .navbar .nav__links {
-        & a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 8px 16px;
-            text-decoration: none;
-            font-size: 1rem;
-        }  
-    }
-
-}
-
-.nav__links a {
-    display: none;
-}
-a.icon {       
-    float: right;
-    display: block;      
-}
-
 #card4, #card5, #card6 {
     display: none;
 }
@@ -131,14 +133,13 @@ a.icon {
         display: block;
     }
 
-
     .project__container {
         height: 50%;
         display: grid;
         margin: 20px 0px 20px 0px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 5%; 
+        gap: 2%; 
         
         .project__info{
             height: 25%;
@@ -149,7 +150,6 @@ a.icon {
         }
     }
 
-    
     .about__container {
         padding: 1% 5%;
         display: grid;
