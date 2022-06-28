@@ -26,7 +26,6 @@ header {
 
 
 body {
-    // margin: 1.5rem;
     background-color: $background-color;
     color: $text-color;
     font-family: 'Cormorant', serif;
@@ -38,6 +37,16 @@ body {
 
     h2 {
         font-size: 3.8rem;
+        margin: 20px 0px 20px 0px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 20px 0px 20px 0px;
+    }
+
+    h5 {
+        font-size: 1.5rem;
         margin: 20px 0px 20px 0px;
     }
 
@@ -60,6 +69,10 @@ body {
 
 .project__card {  
     width: 100%;
+    
+    h4 {
+        font-size: 1.5rem;
+    }
     
     .project__info{
         height: 7%;
@@ -122,12 +135,13 @@ a.icon {
     .project__container {
         height: 50%;
         display: grid;
+        margin: 20px 0px 20px 0px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1rem; 
+        gap: 5%; 
         
         .project__info{
-            height: 20%;
+            height: 25%;
         }
 
         .project__image{
@@ -186,6 +200,14 @@ a.icon {
 .expand-button {
     float: right;
 }
+
+// .contact__container {
+//     display: flex;
+//     justify-content: center;
+//     h6 {
+//         font-size: 3.8rem;
+//     }
+// }
 
 footer button {
     border-radius: 50%;

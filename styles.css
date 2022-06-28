@@ -32,6 +32,14 @@ body h2 {
   font-size: 3.8rem;
   margin: 20px 0px 20px 0px;
 }
+body h3 {
+  font-size: 2rem;
+  margin: 20px 0px 20px 0px;
+}
+body h5 {
+  font-size: 1.5rem;
+  margin: 20px 0px 20px 0px;
+}
 body hr {
   width: 80px;
   border: solid #D9BEA5 2px;
@@ -49,6 +57,9 @@ body p {
 
 .project__card {
   width: 100%;
+}
+.project__card h4 {
+  font-size: 1.5rem;
 }
 .project__card .project__info {
   height: 7%;
@@ -104,12 +115,13 @@ a.icon {
   .project__container {
     height: 50%;
     display: grid;
+    margin: 20px 0px 20px 0px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 5%;
   }
   .project__container .project__info {
-    height: 20%;
+    height: 25%;
   }
   .project__container .project__image {
     height: 70%;
