@@ -42,6 +42,140 @@ a.icon {
     margin: 2rem 4rem 0 4rem;
   }
 }
+.project__card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.project__card h4 {
+  font-size: 1.5rem;
+}
+.project__card .project__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6%;
+}
+.project__card .project__info .project__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.project__card .project__info .project__heading button {
+  margin: 0 5px 0 5px;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #3C3636;
+  color: white;
+}
+.project__card .project__info .project__heading button i {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.project__card .project__info .project__tags button {
+  margin: 0 5px 0 0;
+  height: 1.75rem;
+  width: 80px;
+  border: none;
+  text-decoration: none;
+  background-color: #3C3636;
+  color: white;
+}
+.project__card .project__image {
+  background-color: #3B3636;
+  height: 30%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.project__card .project__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#card4, #card5, #card6 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #card4, #card5, #card6 {
+    display: block;
+  }
+  .project__container {
+    height: 100%;
+    display: grid;
+    margin: 20px 0px 20px 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+  }
+  .project__container .project__info {
+    height: 15%;
+  }
+  .project__container .project__image {
+    height: calc(85% - 10px);
+  }
+}
+.about__container {
+  margin: 100px 0px 100px 0px;
+}
+.about__container .about__image {
+  text-align: center;
+}
+.about__container #self-portrait {
+  width: 100%;
+  margin: 50px 0px 50px 0px;
+}
+.about__container .exp__row {
+  border-bottom: 1px solid #5C5C5C;
+}
+.about__container .interests__row {
+  border-bottom: 1px solid #5C5C5C;
+}
+.about__container .expand-button {
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+  .about__container {
+    padding: 1% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0fr 1fr 0fr;
+    row-gap: 10px;
+    grid-template-areas: "title image" "text image" "exp interests";
+  }
+  .about__title {
+    grid-area: title;
+    padding-left: 40px;
+  }
+  .about__title h3 {
+    margin: 0px 0px 20px 0px;
+  }
+  .about__image {
+    grid-area: image;
+    margin: 0px 0px 0px 0px;
+  }
+  .about__image #self-portrait {
+    width: 100%;
+    margin: 0px;
+  }
+  .about__text {
+    grid-area: text;
+    padding: 0px 40px 0px 40px;
+    text-align: left;
+  }
+  .about__exp {
+    grid-area: exp;
+    padding: 0px 40px 0px 40px;
+  }
+  .about__interests {
+    grid-area: interests;
+    padding: 0px 40px 0px 0px;
+  }
+}
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -142,132 +276,4 @@ body p {
 .description {
   margin: 20px 0px 20px 0px;
   max-width: 377px;
-}
-
-.project__card {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.project__card h4 {
-  font-size: 1.5rem;
-}
-.project__card .project__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 6%;
-  background-color: dodgerblue;
-}
-.project__card .project__info .project__heading {
-  display: flex;
-  justify-content: space-between;
-}
-.project__card .project__info .project__heading button {
-  margin: 0 5px 0 5px;
-  height: 1.75rem;
-  width: 1.75rem;
-  border-radius: 50%;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #3C3636;
-  color: white;
-}
-.project__card .project__info .project__heading button i {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.project__card .project__info .project__tags button {
-  margin: 0 5px 0 0;
-  height: 1.75rem;
-  width: 80px;
-  border: none;
-  text-decoration: none;
-  background-color: #3C3636;
-  color: white;
-}
-.project__card .project__image {
-  background-color: #3B3636;
-  height: 30%;
-  margin-bottom: 10px;
-}
-
-#card4, #card5, #card6 {
-  display: none;
-}
-
-.about__container {
-  margin: 100px 0px 100px 0px;
-}
-.about__container .about__image {
-  text-align: center;
-}
-.about__container #self-portrait {
-  width: 100%;
-  margin: 50px 0px 50px 0px;
-}
-.about__container .exp__row {
-  border-bottom: 1px solid #5C5C5C;
-}
-.about__container .interests__row {
-  border-bottom: 1px solid #5C5C5C;
-}
-.about__container .expand-button {
-  float: right;
-}
-
-@media screen and (min-width: 768px) {
-  #card4, #card5, #card6 {
-    display: block;
-  }
-  .project__container {
-    height: 100%;
-    display: grid;
-    margin: 20px 0px 20px 0px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2%;
-  }
-  .project__container .project__info {
-    height: 15%;
-  }
-  .project__container .project__image {
-    height: calc(85% - 10px);
-  }
-  .about__container {
-    padding: 1% 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0fr 1fr 0fr;
-    row-gap: 10px;
-    grid-template-areas: "title image" "text image" "exp interests";
-  }
-  .about__title {
-    grid-area: title;
-    padding-left: 40px;
-  }
-  .about__title h3 {
-    margin: 0px 0px 20px 0px;
-  }
-  .about__image {
-    grid-area: image;
-    margin: 0px 0px 0px 0px;
-  }
-  .about__image #self-portrait {
-    width: 100%;
-    margin: 0px;
-  }
-  .about__text {
-    grid-area: text;
-    padding: 0px 40px 0px 40px;
-    text-align: left;
-  }
-  .about__exp {
-    grid-area: exp;
-    padding: 0px 40px 0px 40px;
-  }
-  .about__interests {
-    grid-area: interests;
-    padding: 0px 40px 0px 0px;
-  }
 }/*# sourceMappingURL=styles.css.map */

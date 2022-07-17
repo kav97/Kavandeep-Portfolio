@@ -1,0 +1,78 @@
+@use "./variables" as *;
+
+.about__container {
+    margin: 100px 0px 100px 0px;
+    
+    .about__image {
+        text-align: center;
+    }
+
+    #self-portrait {
+        width: 100%;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .exp__row {
+        border-bottom: 1px solid $border-color;
+    }
+
+    .interests__row {
+        border-bottom: 1px solid $border-color;
+    }
+
+    .expand-button {
+        float: right;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .about__container {
+        padding: 1% 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0fr 1fr 0fr;
+        row-gap: 10px;
+        grid-template-areas: 
+        "title image" 
+        "text image" 
+        "exp interests";
+    }
+
+    .about__title {
+        grid-area: title;
+        padding-left: 40px;
+
+        h3 {
+            margin: 0px 0px 20px 0px;
+        }
+        
+    }
+
+    .about__image {
+        grid-area: image;
+        margin: 0px 0px 0px 0px;
+        
+        #self-portrait {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+
+    .about__text {
+        grid-area: text;
+        padding: 0px 40px 0px 40px;
+        text-align: left;
+    }
+
+    .about__exp {
+        grid-area: exp;
+        padding: 0px 40px 0px 40px;
+    }
+
+    .about__interests {
+        grid-area: interests;
+        padding: 0px 40px 0px 0px;
+    }
+}
