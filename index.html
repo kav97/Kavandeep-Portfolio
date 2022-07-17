@@ -22,9 +22,9 @@
           <h1>Kav <span>Johal.</span></h1>
         </div>
         <div class="nav__links">
-          <a href="">About</a>
-          <a href="">Porfolio</a>
-          <a href="">Contact</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Porfolio</a>
+          <a href="#contact">Contact</a>
           <a class="icon">
             <i class="fa fa-bars"></i>
           </a>
@@ -37,78 +37,114 @@
       <div class="title__section">
         <h2>Junior Software Developer.</h2>
         <hr/>
-        <p id="description">
+        <p class="description">
           Hey there, it's Kav! I am an aspiring junior software developer based
           in Wolverhampton. Check out my work below!
         </p>
       </div>
       <!-- Portfolio - Section -->
-      <h3>PORTFOLIO.</h3>
-      <section class="project__container">
+      <h3 id="portfolio">PORTFOLIO.</h3>
+      <section class="project__container" >
         <div id = "card1" class="project__card">
           <div class="project__image"></div>
             <div class="project__info">
-              <h4>CALCULATOR</h4>
-              <button>JavaScipt</button>
-              <button>SCSS</button>
-              <button><i class="fa-regular fa-eye"></i></button>
-              <button><i class="fa-solid fa-code"></i></button>
+              <div class="project__heading">
+                <h4>Calculator</h4>
+                <div class="project__links">
+                  <button onclick="location.href='https://kav97.github.io/JavaScript-Calculator/'"><i class="fa-regular fa-eye"></i></button>
+                  <button onclick="location.href='https://github.com/kav97/JavaScript-Calculator'"><i class="fa-solid fa-code"></i></button>
+                </div>
+              </div>
+              <div class="project__tags">
+                <button>JavaScipt</button>
+                <button>SCSS</button> 
+              </div>
             </div>
         </div>
         <div id = "card2" class="project__card">
           <div class="project__image"></div>
           <div class="project__info">
-            <h4>PROJECT 2</h4>
-            <button>React</button>
-            <button>SCSS</button>
-            <button><i class="fa-regular fa-eye"></i></button>
-            <button><i class="fa-solid fa-code"></i></button>
+            <div class="project__heading">
+              <h4>Morse Translator</h4>
+              <div class="project__links">
+                <button onclick="location.href='https://kav97.github.io/morse-code-translator/'"><i class="fa-regular fa-eye"></i></button>
+                <button onclick="location.href='https://github.com/kav97/morse-code-translator'"><i class="fa-solid fa-code"></i></button>
+              </div>
+            </div>
+            <div class="project__tags">
+              <button>JavaScipt</button>
+              <button>SCSS</button> 
+            </div>
           </div>
         </div>
         <div id = "card3" class="project__card">
           <div class="project__image"></div>
           <div class="project__info">
-            <h4>PROJECT 3</h4>
-            <button>React</button>
-            <button>SCSS</button>
-            <button><i class="fa-regular fa-eye"></i></button>
-            <button><i class="fa-solid fa-code"></i></button>
+            <div class="project__heading">
+              <h4>Poké-Pairs (Game)</h4>
+              <div class="project__links">
+                <button onclick="location.href='https://kav97.github.io/card-memory-game/'"><i class="fa-regular fa-eye"></i></button>
+                <button onclick="location.href='https://github.com/kav97/card-memory-game'"><i class="fa-solid fa-code"></i></button>
+              </div>
+            </div>
+            <div class="project__tags">
+              <button>JavaScipt</button>
+              <button>SCSS</button> 
+            </div>
           </div>
         </div>
         <div id = "card4" class="project__card">
           <div class="project__image"></div>
           <div class="project__info">
-            <h4>PROJECT 4</h4>
-            <button>React</button>
-            <button>SCSS</button>
-            <button><i class="fa-regular fa-eye"></i></button>
-            <button><i class="fa-solid fa-code"></i></button>
+            <div class="project__heading">
+              <h4>PROJECT 4</h4>
+              <div class="project__links">
+                <button><i class="fa-regular fa-eye"></i></button>
+                <button><i class="fa-solid fa-code"></i></button>
+              </div>
+            </div>
+            <div class="project__tags">
+              <button>JavaScipt</button>
+              <button>SCSS</button> 
+            </div>
           </div>
         </div>
         <div id = "card5" class="project__card">
           <div class="project__image"></div>
           <div class="project__info">
-            <h4>PROJECT 5</h4>
-            <button>React</button>
-            <button>SCSS</button>
-            <button><i class="fa-regular fa-eye"></i></button>
-            <button><i class="fa-solid fa-code"></i></button>
+            <div class="project__heading">
+              <h4>PROJECT 5</h4>
+              <div class="project__links">
+                <button><i class="fa-regular fa-eye"></i></button>
+                <button><i class="fa-solid fa-code"></i></button>
+              </div>
+            </div>
+            <div class="project__tags">
+              <button>JavaScipt</button>
+              <button>SCSS</button> 
+            </div>
           </div>
         </div>
         <div id = "card6" class="project__card">
           <div class="project__image"></div>
           <div class="project__info">
-            <h4>PROJECT 6</h4>
-            <button>React</button>
-            <button>SCSS</button>
-            <button><i class="fa-regular fa-eye"></i></button>
-            <button><i class="fa-solid fa-code"></i></button>
+            <div class="project__heading">
+              <h4>PROJECT 6</h4>
+              <div class="project__links">
+                <button><i class="fa-regular fa-eye"></i></button>
+                <button><i class="fa-solid fa-code"></i></button>
+              </div>
+            </div>
+            <div class="project__tags">
+              <button>JavaScipt</button>
+              <button>SCSS</button> 
+            </div>
           </div>
         </div>
       </section>
       <!-- About me - Section -->
 
-      <section class="about__section">
+      <section class="about__section" id="about">
         <div class="about__container">
           <div class="about__title">
             <h3>ABOUT.</h3>
@@ -199,17 +235,22 @@
       </section>
 
       <!-- Get in touch - Section -->      
-      <section class="contact-container">
+      <section class="contact-container" id="contact">
         <p class="contact__info">Get in Touch.</p>
         <button class="contact__button" onclick="window.location.href='mailto:kavan1@live.co.uk';">CONTACT</p>
       </section>
     </main>
     <!-- Footer - Section -->
     <footer class="external__links">
-
-        <a href="https://www.linkedin.com/in/kavandeep-johal-583bbb188/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/kav97" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="#">CV</a>
+      <a href="https://www.linkedin.com/in/kavandeep-johal-583bbb188/" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/kav97" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="#">
+        CV
+      </a>
     </footer>
   </body>
 

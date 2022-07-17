@@ -37,18 +37,64 @@ a.icon {
     font-size: 1rem;
   }
 }
+@media screen and (min-width: 768px) {
+  header {
+    margin: 2rem 4rem 0 4rem;
+  }
+}
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 80px 0px 80px 0px;
 }
 .contact-container .contact__info {
   font-size: 3.8rem;
   font-family: "Cormorant", sans-serif;
-  text-align: center;
+  margin: 40px 0px 40px 0px;
 }
 .contact-container .contact__button {
-  width: 75%;
+  height: 80px;
+  width: 70%;
+  border: 1px solid #D9BEA5;
+  background-color: transparent;
+  font-size: 1.25rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 425px) {
+  .contact__button {
+    max-width: 16.25rem;
+  }
+}
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #453F3F;
+  color: #D9BEA5;
+  margin: 2%;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+footer a i {
+  font-size: 1.75rem;
+}
+
+.external__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3B3636;
+  height: 100px;
 }
 
 * {
@@ -88,20 +134,57 @@ body p {
   margin: 20px 0px 20px 0px;
 }
 
-#description {
+@media screen and (min-width: 768px) {
+  body main {
+    margin: 4rem;
+  }
+}
+.description {
   margin: 20px 0px 20px 0px;
   max-width: 377px;
 }
 
 .project__card {
   width: 100%;
+  margin-bottom: 20px;
 }
 .project__card h4 {
   font-size: 1.5rem;
 }
 .project__card .project__info {
-  height: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6%;
   background-color: dodgerblue;
+}
+.project__card .project__info .project__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.project__card .project__info .project__heading button {
+  margin: 0 5px 0 5px;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #3C3636;
+  color: white;
+}
+.project__card .project__info .project__heading button i {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.project__card .project__info .project__tags button {
+  margin: 0 5px 0 0;
+  height: 1.75rem;
+  width: 80px;
+  border: none;
+  text-decoration: none;
+  background-color: #3C3636;
+  color: white;
 }
 .project__card .project__image {
   background-color: #3B3636;
@@ -111,6 +194,26 @@ body p {
 
 #card4, #card5, #card6 {
   display: none;
+}
+
+.about__container {
+  margin: 100px 0px 100px 0px;
+}
+.about__container .about__image {
+  text-align: center;
+}
+.about__container #self-portrait {
+  width: 100%;
+  margin: 50px 0px 50px 0px;
+}
+.about__container .exp__row {
+  border-bottom: 1px solid #5C5C5C;
+}
+.about__container .interests__row {
+  border-bottom: 1px solid #5C5C5C;
+}
+.about__container .expand-button {
+  float: right;
 }
 
 @media screen and (min-width: 768px) {
@@ -143,11 +246,16 @@ body p {
     grid-area: title;
     padding-left: 40px;
   }
+  .about__title h3 {
+    margin: 0px 0px 20px 0px;
+  }
   .about__image {
     grid-area: image;
+    margin: 0px 0px 0px 0px;
   }
   .about__image #self-portrait {
     width: 100%;
+    margin: 0px;
   }
   .about__text {
     grid-area: text;
@@ -162,50 +270,4 @@ body p {
     grid-area: interests;
     padding: 0px 40px 0px 0px;
   }
-}
-.about__container {
-  margin: 100px 0px 100px 0px;
-}
-.about__container .about__image {
-  text-align: center;
-}
-.about__container #self-portrait {
-  width: 100%;
-}
-.about__container .exp__row {
-  border-bottom: 1px solid #5C5C5C;
-}
-.about__container .interests__row {
-  border-bottom: 1px solid #5C5C5C;
-}
-.about__container .expand-button {
-  float: right;
-}
-
-footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background-color: #453F3F;
-  color: #D9BEA5;
-  margin: 2%;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-family: "Inter", sans-serif;
-}
-footer a i {
-  font-size: 1.75rem;
-}
-
-.external__links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3B3636;
-  height: 100px;
 }/*# sourceMappingURL=styles.css.map */

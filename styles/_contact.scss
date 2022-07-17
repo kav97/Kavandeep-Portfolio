@@ -4,14 +4,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 80px 0px 80px 0px;
     
     .contact__info {
         font-size: 3.8rem;
         font-family: 'Cormorant', sans-serif;
-        text-align: center;
+        margin: 40px 0px 40px 0px;
     }
 
     .contact__button {
-        width:75%
+        height: 80px;
+        width:70%;
+        border: 1px solid $accent-color;
+        background-color: transparent;
+        font-size: 1.25rem;
+        font-family: 'Inter', sans-serif;
+        color: $text-color;
+        cursor: pointer;
+        
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .contact__button {
+        max-width:16.25rem;
     }
 }

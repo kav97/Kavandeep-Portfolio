@@ -1,6 +1,7 @@
 @use "./styles/variables" as *;
 @use "./styles/navbar" as *;
 @use "./styles/contact" as *;
+@use "./styles/footer" as *;
 
 * {
    padding: 0;
@@ -44,22 +45,68 @@ body {
         margin: 20px 0px 20px 0px;
     }
 }
+@media screen and (min-width: 768px) {
+    body {
+        main {
+            margin: 4rem;
+        }   
+    }
+}
 
-#description {
+.description {
     margin: 20px 0px 20px 0px;
     max-width: 377px;
 }
 
 .project__card {  
     width: 100%;
+    margin-bottom: 20px;
     
     h4 {
         font-size: 1.5rem;
     }
     
     .project__info{
-        height: 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 6%;
         background-color: dodgerblue;
+
+        .project__heading {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                margin: 0 5px 0 5px;
+                height: 1.75rem;
+                width: 1.75rem;
+                border-radius: 50%;
+                border: none;
+                text-decoration: none;
+                cursor: pointer;
+                background-color: $project-icon-color;
+                color: $text-color;
+
+                i {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+
+        .project__tags {
+            button {
+                margin: 0 5px 0 0;
+                height: 1.75rem;
+                width: 80px;
+                border: none;
+                text-decoration: none;
+                background-color: $project-icon-color;
+                color: $text-color;
+            }
+        }
     }    
     
     .project__image {          
@@ -73,7 +120,30 @@ body {
     display: none;
 }
 
+.about__container {
+    margin: 100px 0px 100px 0px;
+    
+    .about__image {
+        text-align: center;
+    }
 
+    #self-portrait {
+        width: 100%;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .exp__row {
+        border-bottom: 1px solid $border-color;
+    }
+
+    .interests__row {
+        border-bottom: 1px solid $border-color;
+    }
+
+    .expand-button {
+        float: right;
+    }
+}
 
 @media screen and (min-width: 768px) {
     #card4, #card5, #card6 {
@@ -112,13 +182,20 @@ body {
     .about__title {
         grid-area: title;
         padding-left: 40px;
+
+        h3 {
+            margin: 0px 0px 20px 0px;
+        }
+        
     }
 
     .about__image {
         grid-area: image;
+        margin: 0px 0px 0px 0px;
         
         #self-portrait {
             width: 100%;
+            margin: 0px;
         }
     }
 
@@ -139,59 +216,5 @@ body {
     }
 }
 
-.about__container {
-    margin: 100px 0px 100px 0px;
-    
-    .about__image {
-        text-align: center;
-    }
-
-    #self-portrait {
-        width: 100%;
-    }
-
-    .exp__row {
-        border-bottom: 1px solid $border-color;
-    }
-
-    .interests__row {
-        border-bottom: 1px solid $border-color;
-    }
-
-    .expand-button {
-        float: right;
-    }
-}
 
 
-
-
-footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    background-color: $footer-link-color;
-    color: $accent-color;
-    margin: 2%;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'Inter', sans-serif;
-
-    i {
-
-        font-size: 1.75rem;
-    }
-}
-
-.external__links {   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $project-color;
-    height: 100px;
-}
