@@ -58,6 +58,7 @@ a.icon {
 .project__card .project__info .project__heading {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .project__card .project__info .project__heading button {
   margin: 0 5px 0 5px;
@@ -75,7 +76,7 @@ a.icon {
   font-weight: bold;
 }
 .project__card .project__info .project__tags button {
-  margin: 0 5px 0 0;
+  margin: 0 5px 5px 0;
   height: 1.75rem;
   width: 80px;
   border: none;
@@ -88,6 +89,8 @@ a.icon {
   height: 30%;
   margin-bottom: 10px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .project__card .project__image img {
   width: 100%;
@@ -235,6 +238,10 @@ footer a i {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

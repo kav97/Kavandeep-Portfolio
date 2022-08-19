@@ -16,6 +16,7 @@
         .project__heading {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 10px;
 
             button {
                 margin: 0 5px 0 5px;
@@ -38,7 +39,7 @@
 
         .project__tags {
             button {
-                margin: 0 5px 0 0;
+                margin: 0 5px 5px 0;
                 height: 1.75rem;
                 width: 80px;
                 border: none;
@@ -54,6 +55,8 @@
         height: 30%;
         margin-bottom: 10px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
         
         img {
             width:100%;
