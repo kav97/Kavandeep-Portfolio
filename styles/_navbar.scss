@@ -2,6 +2,7 @@
 
 header {
     margin: 1.5rem;
+    
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -16,16 +17,24 @@ header {
                 color: $accent-color;
             }
         }   
+
+        .nav__links  {
+            display: flex;
+            align-items: center;
+
+            a {
+                display: none;
+            }
+
+            .menu {       
+                float: right;
+                display: block; 
+        
+            }
+        }
     }
 }
 
-.nav__links a {
-    display: none;
-}
-a.icon {       
-    float: right;
-    display: block;      
-}
 
 @media screen and (min-width: 426px) {  
     
@@ -33,11 +42,11 @@ a.icon {
 
         .nav__links {
 
-            a.icon {
+            a.menu {
                 display: none; 
             }
             
-            & a {
+            a.option {
             float: left;
             display: block;
             color: #f2f2f2;
@@ -51,7 +60,7 @@ a.icon {
 }
 
 @media screen and (min-width: 768px) {
-    header{
+    header {
         margin: 2rem 4rem 0 4rem;
     }
 }

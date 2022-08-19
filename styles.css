@@ -13,21 +13,23 @@ header .navbar .nav__name {
 header .navbar .nav__name span {
   color: #D9BEA5;
 }
-
-.nav__links a {
+header .navbar .nav__links {
+  display: flex;
+  align-items: center;
+}
+header .navbar .nav__links a {
   display: none;
 }
-
-a.icon {
+header .navbar .nav__links .menu {
   float: right;
   display: block;
 }
 
 @media screen and (min-width: 426px) {
-  .navbar .nav__links a.icon {
+  .navbar .nav__links a.menu {
     display: none;
   }
-  .navbar .nav__links a {
+  .navbar .nav__links a.option {
     float: left;
     display: block;
     color: #f2f2f2;
