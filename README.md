@@ -11,11 +11,17 @@ Hello everyone! I approached this project using strictly what I have been taught
     - Footer
 
 I then started writing up section-by-section the HTML & SCSS needed to create this project. To understand how it all worked/ linked together I've used BEM notation throughout my work.
-<br/><br/>
-Mobile view:
-<br/><br/>
-![](images/webpage-screenshot.jpg)
+<br/>
 
-Desktop view:
-<br/><br/>
-![](images/webpage-desktop-screenshot.jpg)
+## Project View 📱
+
+</br>
+
+| Mobile View | Desktop View |
+|:---:|:---:|
+|![](images/webpage-screenshot.jpg)| ![](images/webpage-desktop-screenshot.jpg)|
+
+</br>
+
+## Future improvements 🌟
+- I would like to redo this project using React. Using JSX components to create an interactive and 
