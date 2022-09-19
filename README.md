@@ -24,4 +24,4 @@ I then started writing up section-by-section the HTML & SCSS needed to create th
 </br>
 
 ## Future improvements 🌟
-- I would like to redo this project using React. Using JSX components to create an interactive and 
+- I would like to redo this project using React. Using JSX components to create an interactive and responsive website.
